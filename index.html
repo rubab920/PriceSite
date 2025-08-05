@@ -1,0 +1,1574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Minds - Digital Marketing & Technology Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#eff6ff',
+                            500: '#4F7AFF',
+                            600: '#2563EB',
+                            700: '#1E40AF',
+                            900: '#1E293B'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="font-sans bg-white">
+
+<!-- @COMPONENT: MainHeader -->
+<header class="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <div class="flex items-center">
+                <span class="text-xl font-bold text-gray-900">Semantic Minds</span>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden lg:flex items-center space-x-8">
+                <div class="relative group">
+                    <button class="flex items-center text-gray-700 hover:text-primary-600 transition-colors duration-200 nav-dropdown" data-dropdown="seo-dropdown">
+                        SEO & Lead Generation
+                        <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                    </button>
+                    <div id="seo-dropdown" class="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                        <div class="p-4">
+                            <a href="#services" class="block py-2 px-3 text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded">SEO Services</a>
+                            <a href="#services" class="block py-2 px-3 text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded">Lead Generation</a>
+                            <a href="#services" class="block py-2 px-3 text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded">Local SEO</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative group">
+                    <button class="flex items-center text-gray-700 hover:text-primary-600 transition-colors duration-200 nav-dropdown" data-dropdown="marketing-dropdown">
+                        Revenue Marketing & CRO
+                        <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                    </button>
+                    <div id="marketing-dropdown" class="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                        <div class="p-4">
+                            <a href="#services" class="block py-2 px-3 text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded">Conversion Rate Optimization</a>
+                            <a href="#services" class="block py-2 px-3 text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded">Revenue Marketing</a>
+                            <a href="#services" class="block py-2 px-3 text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded">Performance Marketing</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative group">
+                    <button class="flex items-center text-gray-700 hover:text-primary-600 transition-colors duration-200 nav-dropdown" data-dropdown="ux-dropdown">
+                        UX & Interactive
+                        <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                    </button>
+                    <div id="ux-dropdown" class="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                        <div class="p-4">
+                            <a href="#services" class="block py-2 px-3 text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded">UI/UX Design</a>
+                            <a href="#services" class="block py-2 px-3 text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded">Web Development</a>
+                            <a href="#services" class="block py-2 px-3 text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded">Interactive Design</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative group">
+                    <button class="flex items-center text-gray-700 hover:text-primary-600 transition-colors duration-200 nav-dropdown" data-dropdown="ai-dropdown">
+                        AI & Technology
+                        <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                    </button>
+                    <div id="ai-dropdown" class="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                        <div class="p-4">
+                            <a href="#technology" class="block py-2 px-3 text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded">AI Solutions</a>
+                            <a href="#technology" class="block py-2 px-3 text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded">API Integration</a>
+                            <a href="#technology" class="block py-2 px-3 text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded">Technology Consulting</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative group">
+                    <button class="flex items-center text-gray-700 hover:text-primary-600 transition-colors duration-200 nav-dropdown" data-dropdown="about-dropdown">
+                        Who We Are
+                        <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                    </button>
+                    <div id="about-dropdown" class="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                        <div class="p-4">
+                            <a href="#inside" class="block py-2 px-3 text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded">About Us</a>
+                            <a href="#expertise" class="block py-2 px-3 text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded">Our Team</a>
+                            <a href="#results" class="block py-2 px-3 text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded">Our Results</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="bg-primary-500 hover:bg-primary-600 text-white px-6 py-2 rounded-lg font-medium transition-colors duration-200 book-call-btn">
+                    Book an Intro Call
+                </button>
+            </div>
+            
+            <!-- Mobile menu button -->
+            <button class="lg:hidden text-gray-600 hover:text-gray-900" id="mobile-menu-button">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="lg:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-200">
+                <a href="#services" class="block px-3 py-2 text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded-md">SEO & Lead Generation</a>
+                <a href="#services" class="block px-3 py-2 text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded-md">Revenue Marketing & CRO</a>
+                <a href="#services" class="block px-3 py-2 text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded-md">UX & Interactive</a>
+                <a href="#technology" class="block px-3 py-2 text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded-md">AI & Technology</a>
+                <a href="#inside" class="block px-3 py-2 text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded-md">Who We Are</a>
+                <button class="w-full text-left px-3 py-2 bg-primary-500 text-white rounded-md book-call-btn">Book an Intro Call</button>
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- @END_COMPONENT: MainHeader -->
+
+<!-- @COMPONENT: HeroSection -->
+<section class="relative overflow-hidden">
+    <!-- Hero background with gradient -->
+    <div class="absolute inset-0 bg-gradient-to-br from-primary-500 via-blue-600 to-primary-700"></div>
+    
+    <!-- Background pattern overlay -->
+    <div class="absolute inset-0 opacity-10">
+        <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\"><defs><pattern id=\"grid\" width=\"10\" height=\"10\" patternUnits=\"userSpaceOnUse\"><path d=\"M 10 0 L 0 0 0 10\" fill=\"none\" stroke=\"white\" stroke-width=\"0.5\"/></pattern></defs><rect width=\"100\" height=\"100\" fill=\"url(%23grid)\"/></svg>');"></div>
+    </div>
+    
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="text-white">
+                <h1 class="text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                    Flexible Digital Packages for Your Business Growth
+                </h1>
+                <p class="text-xl text-blue-100 mb-8 leading-relaxed">
+                    Streamlined solutions for swift success. Scale your digital presence with our comprehensive marketing and technology services.
+                </p>
+                <button class="bg-white text-primary-600 hover:bg-gray-50 px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-200 shadow-lg get-started-btn">
+                    Get Started Today
+                </button>
+                
+                <!-- Trusted by logos -->
+                <div class="mt-12">
+                    <p class="text-blue-200 text-sm mb-4">Trusted by leading brands</p>
+                    <div class="flex items-center space-x-8 opacity-70">
+                        <span class="text-white font-medium">Google</span>
+                        <span class="text-white font-medium">Microsoft</span>
+                        <span class="text-white font-medium">Amazon</span>
+                        <span class="text-white font-medium">Netflix</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="relative">
+                <!-- Modern business team collaboration photo -->
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="Business team collaboration" class="rounded-2xl shadow-2xl w-full h-auto" />
+                
+                <!-- Floating stats cards -->
+                <div class="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-xl p-6 max-w-xs">
+                    <div class="flex items-center space-x-4">
+                        <div class="bg-green-100 p-3 rounded-lg">
+                            <i class="fas fa-chart-line text-green-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-gray-900">325%</div>
+                            <div class="text-gray-600 text-sm">Revenue Growth</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="absolute -top-6 -right-6 bg-white rounded-xl shadow-xl p-6 max-w-xs">
+                    <div class="flex items-center space-x-4">
+                        <div class="bg-blue-100 p-3 rounded-lg">
+                            <i class="fas fa-users text-blue-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-gray-900">10k+</div>
+                            <div class="text-gray-600 text-sm">Happy Clients</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- @END_COMPONENT: HeroSection -->
+
+<!-- @COMPONENT: SecondaryNavigation -->
+<nav class="bg-gray-50 border-b border-gray-200 sticky top-16 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-center space-x-8 py-4 overflow-x-auto">
+            <a href="#services" class="whitespace-nowrap text-gray-700 hover:text-primary-600 font-medium transition-colors duration-200 nav-link">Services</a>
+            <a href="#pricing" class="whitespace-nowrap text-gray-700 hover:text-primary-600 font-medium transition-colors duration-200 nav-link">Pricing</a>
+            <a href="#case-studies" class="whitespace-nowrap text-gray-700 hover:text-primary-600 font-medium transition-colors duration-200 nav-link">Case Studies</a>
+            <a href="#technology" class="whitespace-nowrap text-gray-700 hover:text-primary-600 font-medium transition-colors duration-200 nav-link">Our Technology</a>
+            <a href="#expertise" class="whitespace-nowrap text-gray-700 hover:text-primary-600 font-medium transition-colors duration-200 nav-link">Our Expertise</a>
+            <a href="#results" class="whitespace-nowrap text-gray-700 hover:text-primary-600 font-medium transition-colors duration-200 nav-link">Our Results</a>
+            <a href="#inside" class="whitespace-nowrap text-gray-700 hover:text-primary-600 font-medium transition-colors duration-200 nav-link">Inside Semantic Minds</a>
+        </div>
+    </div>
+</nav>
+<!-- @END_COMPONENT: SecondaryNavigation -->
+
+<!-- @COMPONENT: PricingPlanSelector -->
+<section id="pricing" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">Choose Your Plan</h2>
+            <p class="text-xl text-gray-600 mb-8">Flexible pricing that grows with your business</p>
+            
+            <!-- Billing toggle -->
+            <div class="flex items-center justify-center space-x-4 mb-8">
+                <span class="text-gray-600">Monthly</span>
+                <button class="relative inline-flex h-6 w-11 items-center rounded-full bg-primary-500 transition-colors focus:outline-none" id="billing-toggle">
+                    <span class="inline-block h-4 w-4 transform rounded-full bg-white transition-transform translate-x-6" id="billing-toggle-dot"></span>
+                </button>
+                <span class="text-gray-900 font-medium">Yearly</span>
+                <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Save 20%</span>
+            </div>
+            
+            <!-- Currency selector -->
+            <div class="flex items-center justify-center space-x-2 mb-8">
+                <button class="flex items-center space-x-2 bg-gray-100 hover:bg-gray-200 px-4 py-2 rounded-lg transition-colors currency-btn" data-currency="USD">
+                    <span class="text-sm">🇺🇸</span>
+                    <span class="font-medium">USD</span>
+                </button>
+                <button class="flex items-center space-x-2 bg-gray-50 hover:bg-gray-100 px-4 py-2 rounded-lg transition-colors currency-btn" data-currency="EUR">
+                    <span class="text-sm">🇪🇺</span>
+                    <span class="font-medium">EUR</span>
+                </button>
+                <button class="flex items-center space-x-2 bg-primary-500 hover:bg-primary-600 text-white px-4 py-2 rounded-lg transition-colors currency-btn active" data-currency="GBP">
+                    <span class="text-sm">🇬🇧</span>
+                    <span class="font-medium">GBP</span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Pricing cards grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Starter Plan -->
+            <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Starter</h3>
+                <div class="text-3xl font-bold text-gray-900 mb-1">£71<span class="text-lg text-gray-600">/month</span></div>
+                <p class="text-gray-600 text-sm mb-6">5 hours included</p>
+                <ul class="space-y-3 mb-8">
+                    <li class="flex items-center text-sm text-gray-600">
+                        <i class="fas fa-check text-green-500 mr-3"></i>
+                        Basic SEO optimization
+                    </li>
+                    <li class="flex items-center text-sm text-gray-600">
+                        <i class="fas fa-check text-green-500 mr-3"></i>
+                        Social media management
+                    </li>
+                    <li class="flex items-center text-sm text-gray-600">
+                        <i class="fas fa-check text-green-500 mr-3"></i>
+                        Monthly reporting
+                    </li>
+                </ul>
+                <button class="w-full bg-gray-100 hover:bg-gray-200 text-gray-900 py-3 rounded-lg font-medium transition-colors duration-200 plan-btn" data-plan="starter">
+                    Get Started
+                </button>
+            </div>
+            
+            <!-- Growth Plan -->
+            <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Growth</h3>
+                <div class="text-3xl font-bold text-gray-900 mb-1">£144<span class="text-lg text-gray-600">/month</span></div>
+                <p class="text-gray-600 text-sm mb-6">25 hours included</p>
+                <ul class="space-y-3 mb-8">
+                    <li class="flex items-center text-sm text-gray-600">
+                        <i class="fas fa-check text-green-500 mr-3"></i>
+                        Everything in Starter
+                    </li>
+                    <li class="flex items-center text-sm text-gray-600">
+                        <i class="fas fa-check text-green-500 mr-3"></i>
+                        PPC management
+                    </li>
+                    <li class="flex items-center text-sm text-gray-600">
+                        <i class="fas fa-check text-green-500 mr-3"></i>
+                        Content creation
+                    </li>
+                </ul>
+                <button class="w-full bg-gray-100 hover:bg-gray-200 text-gray-900 py-3 rounded-lg font-medium transition-colors duration-200 plan-btn" data-plan="growth">
+                    Get Started
+                </button>
+            </div>
+            
+            <!-- Professional Plan (Most Popular) -->
+            <div class="bg-white border-2 border-primary-500 rounded-2xl p-8 relative hover:shadow-lg transition-shadow duration-300">
+                <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                    <span class="bg-primary-500 text-white px-4 py-1 rounded-full text-sm font-medium">Most Popular</span>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Professional</h3>
+                <div class="text-3xl font-bold text-gray-900 mb-1">£290<span class="text-lg text-gray-600">/month</span></div>
+                <p class="text-gray-600 text-sm mb-6">50 hours included</p>
+                <ul class="space-y-3 mb-8">
+                    <li class="flex items-center text-sm text-gray-600">
+                        <i class="fas fa-check text-green-500 mr-3"></i>
+                        Everything in Growth
+                    </li>
+                    <li class="flex items-center text-sm text-gray-600">
+                        <i class="fas fa-check text-green-500 mr-3"></i>
+                        Advanced analytics
+                    </li>
+                    <li class="flex items-center text-sm text-gray-600">
+                        <i class="fas fa-check text-green-500 mr-3"></i>
+                        Custom development
+                    </li>
+                </ul>
+                <button class="w-full bg-primary-500 hover:bg-primary-600 text-white py-3 rounded-lg font-medium transition-colors duration-200 plan-btn" data-plan="professional">
+                    Get Started
+                </button>
+            </div>
+            
+            <!-- Enterprise Plan -->
+            <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Enterprise</h3>
+                <div class="text-3xl font-bold text-gray-900 mb-1">£728<span class="text-lg text-gray-600">/month</span></div>
+                <p class="text-gray-600 text-sm mb-6">100 hours included</p>
+                <ul class="space-y-3 mb-8">
+                    <li class="flex items-center text-sm text-gray-600">
+                        <i class="fas fa-check text-green-500 mr-3"></i>
+                        Everything in Professional
+                    </li>
+                    <li class="flex items-center text-sm text-gray-600">
+                        <i class="fas fa-check text-green-500 mr-3"></i>
+                        Dedicated account manager
+                    </li>
+                    <li class="flex items-center text-sm text-gray-600">
+                        <i class="fas fa-check text-green-500 mr-3"></i>
+                        Priority support
+                    </li>
+                </ul>
+                <button class="w-full bg-gray-100 hover:bg-gray-200 text-gray-900 py-3 rounded-lg font-medium transition-colors duration-200 plan-btn" data-plan="enterprise">
+                    Get Started
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- @END_COMPONENT: PricingPlanSelector -->
+
+<!-- @COMPONENT: PricingDashboard -->
+<section class="py-16 bg-gradient-to-br from-primary-500 to-primary-700">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold text-white mb-4">Real-time Pricing Dashboard</h2>
+            <p class="text-xl text-blue-100">Track your investment and results</p>
+        </div>
+        
+        <!-- Dashboard tabs -->
+        <div class="flex justify-center mb-8">
+            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-1 flex space-x-1">
+                <button class="px-6 py-2 rounded-lg bg-white text-primary-600 font-medium transition-all duration-200 dashboard-tab active" data-tab="starter">Starter</button>
+                <button class="px-6 py-2 rounded-lg text-white hover:bg-white/20 font-medium transition-all duration-200 dashboard-tab" data-tab="growth">Growth</button>
+                <button class="px-6 py-2 rounded-lg text-white hover:bg-white/20 font-medium transition-all duration-200 dashboard-tab" data-tab="professional">Professional</button>
+                <button class="px-6 py-2 rounded-lg text-white hover:bg-white/20 font-medium transition-all duration-200 dashboard-tab" data-tab="enterprise">Enterprise</button>
+            </div>
+        </div>
+        
+        <!-- Dashboard content -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+                <div class="text-3xl font-bold text-white mb-2" id="dashboard-rate">£32/Hour</div>
+                <div class="text-blue-200 text-sm">Rate</div>
+            </div>
+            
+            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+                <div class="text-3xl font-bold text-white mb-2" id="dashboard-hours">5 Hours</div>
+                <div class="text-blue-200 text-sm">This Month</div>
+            </div>
+            
+            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+                <div class="text-3xl font-bold text-white mb-2" id="dashboard-total">£160 Total</div>
+                <div class="text-blue-200 text-sm">Monthly Spend</div>
+            </div>
+            
+            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+                <div class="text-3xl font-bold text-white mb-2" id="dashboard-active">3 Days</div>
+                <div class="text-blue-200 text-sm">Active</div>
+            </div>
+            
+            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+                <div class="text-3xl font-bold text-white mb-2" id="dashboard-daily">5 Hours</div>
+                <div class="text-blue-200 text-sm">Per Day</div>
+            </div>
+            
+            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+                <div class="text-3xl font-bold text-white mb-2" id="dashboard-discount">0%</div>
+                <div class="text-blue-200 text-sm">Discount</div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- @END_COMPONENT: PricingDashboard -->
+
+<!-- @COMPONENT: ServicesSection -->
+<section id="services" class="py-20 bg-gradient-to-br from-primary-500 to-primary-700">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-5xl font-bold text-white mb-6">Our Services</h2>
+            <p class="text-xl text-blue-100 max-w-3xl mx-auto">Comprehensive digital solutions to accelerate your business growth</p>
+        </div>
+        
+        <!-- Service categories with interactive buttons -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
+            <!-- Top row - featured services -->
+            <button class="bg-white hover:bg-gray-50 text-gray-900 p-6 rounded-2xl font-semibold text-lg transition-all duration-300 hover:scale-105 shadow-lg col-span-1 service-btn active" data-service="digital-marketing">
+                <i class="fas fa-bullhorn text-primary-500 text-2xl mb-3 block"></i>
+                Digital Marketing
+            </button>
+            <button class="bg-primary-400 hover:bg-primary-300 text-white p-6 rounded-2xl font-semibold text-lg transition-all duration-300 hover:scale-105 shadow-lg service-btn" data-service="ai">
+                <i class="fas fa-robot text-white text-2xl mb-3 block"></i>
+                AI
+            </button>
+            <button class="bg-white hover:bg-gray-50 text-gray-900 p-6 rounded-2xl font-semibold text-lg transition-all duration-300 hover:scale-105 shadow-lg service-btn" data-service="design-development">
+                <i class="fas fa-code text-primary-500 text-2xl mb-3 block"></i>
+                Design and Development
+            </button>
+            
+            <!-- Second row -->
+            <button class="bg-white hover:bg-gray-50 text-gray-900 p-6 rounded-2xl font-semibold text-lg transition-all duration-300 hover:scale-105 shadow-lg service-btn" data-service="link-building">
+                <i class="fas fa-link text-primary-500 text-2xl mb-3 block"></i>
+                Link Building
+            </button>
+            <button class="bg-primary-400 hover:bg-primary-300 text-white p-6 rounded-2xl font-semibold text-lg transition-all duration-300 hover:scale-105 shadow-lg service-btn" data-service="local-seo">
+                <i class="fas fa-map-marker-alt text-white text-2xl mb-3 block"></i>
+                Local SEO
+            </button>
+            <button class="bg-white hover:bg-gray-50 text-gray-900 p-6 rounded-2xl font-semibold text-lg transition-all duration-300 hover:scale-105 shadow-lg service-btn" data-service="reputation-management">
+                <i class="fas fa-star text-primary-500 text-2xl mb-3 block"></i>
+                Online Reputation Management
+            </button>
+            
+            <!-- Third row -->
+            <button class="bg-primary-400 hover:bg-primary-300 text-white p-6 rounded-2xl font-semibold text-lg transition-all duration-300 hover:scale-105 shadow-lg service-btn" data-service="seo-services">
+                <i class="fas fa-search text-white text-2xl mb-3 block"></i>
+                SEO Services
+            </button>
+            <button class="bg-white hover:bg-gray-50 text-gray-900 p-6 rounded-2xl font-semibold text-lg transition-all duration-300 hover:scale-105 shadow-lg service-btn" data-service="conversion-optimization">
+                <i class="fas fa-chart-line text-primary-500 text-2xl mb-3 block"></i>
+                Conversion Rate Optimisation
+            </button>
+            <button class="bg-primary-400 hover:bg-primary-300 text-white p-6 rounded-2xl font-semibold text-lg transition-all duration-300 hover:scale-105 shadow-lg service-btn" data-service="lead-generation">
+                <i class="fas fa-user-plus text-white text-2xl mb-3 block"></i>
+                Lead Generation
+            </button>
+            
+            <!-- Fourth row -->
+            <button class="bg-white hover:bg-gray-50 text-gray-900 p-6 rounded-2xl font-semibold text-lg transition-all duration-300 hover:scale-105 shadow-lg service-btn" data-service="linkedin-marketing">
+                <i class="fab fa-linkedin text-primary-500 text-2xl mb-3 block"></i>
+                Linkedin Marketing
+            </button>
+            <button class="bg-primary-400 hover:bg-primary-300 text-white p-6 rounded-2xl font-semibold text-lg transition-all duration-300 hover:scale-105 shadow-lg service-btn" data-service="adwords">
+                <i class="fas fa-ad text-white text-2xl mb-3 block"></i>
+                Adwords
+            </button>
+            <button class="bg-white hover:bg-gray-50 text-gray-900 p-6 rounded-2xl font-semibold text-lg transition-all duration-300 hover:scale-105 shadow-lg service-btn" data-service="paid-media">
+                <i class="fas fa-dollar-sign text-primary-500 text-2xl mb-3 block"></i>
+                Paid Media
+            </button>
+            
+            <!-- Fifth row -->
+            <button class="bg-primary-400 hover:bg-primary-300 text-white p-6 rounded-2xl font-semibold text-lg transition-all duration-300 hover:scale-105 shadow-lg service-btn" data-service="ecommerce-marketing">
+                <i class="fas fa-shopping-cart text-white text-2xl mb-3 block"></i>
+                E-commerce Marketing
+            </button>
+            <button class="bg-white hover:bg-gray-50 text-gray-900 p-6 rounded-2xl font-semibold text-lg transition-all duration-300 hover:scale-105 shadow-lg service-btn" data-service="saas-marketing">
+                <i class="fas fa-cloud text-primary-500 text-2xl mb-3 block"></i>
+                Saas Marketing
+            </button>
+            <button class="bg-primary-400 hover:bg-primary-300 text-white p-6 rounded-2xl font-semibold text-lg transition-all duration-300 hover:scale-105 shadow-lg service-btn" data-service="b2b-marketing">
+                <i class="fas fa-building text-white text-2xl mb-3 block"></i>
+                B2b Marketing
+            </button>
+        </div>
+        
+        <!-- Service content area -->
+        <div id="service-content" class="bg-white/10 backdrop-blur-sm rounded-3xl p-8 border border-white/20">
+            <!-- Digital Marketing content (default) -->
+            <div class="service-content active" data-content="digital-marketing">
+                <h3 class="text-3xl font-bold text-white mb-6">Digital Marketing</h3>
+                <p class="text-blue-100 text-lg mb-8">Streamlining solutions for swift success</p>
+                
+                <!-- Modern office workspace photo -->
+                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&h=300" alt="Modern office workspace" class="rounded-xl w-full h-48 object-cover mb-8" />
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <span class="bg-white/20 text-white px-4 py-2 rounded-full text-sm">Content Creation</span>
+                    <span class="bg-white/20 text-white px-4 py-2 rounded-full text-sm">Performance Marketing</span>
+                    <span class="bg-white/20 text-white px-4 py-2 rounded-full text-sm">Decentralized</span>
+                    <span class="bg-white/20 text-white px-4 py-2 rounded-full text-sm">Paid Media</span>
+                    <span class="bg-white/20 text-white px-4 py-2 rounded-full text-sm">Website Development</span>
+                    <span class="bg-white/20 text-white px-4 py-2 rounded-full text-sm">Web Design</span>
+                    <span class="bg-white/20 text-white px-4 py-2 rounded-full text-sm">SEO Services</span>
+                    <span class="bg-white/20 text-white px-4 py-2 rounded-full text-sm">Video Production</span>
+                </div>
+            </div>
+            
+            <!-- Other service content (hidden by default) -->
+            <div class="service-content hidden" data-content="ai">
+                <h3 class="text-3xl font-bold text-white mb-6">AI & Technology</h3>
+                <p class="text-blue-100 text-lg mb-8">Cutting-edge AI solutions for modern businesses</p>
+                <!-- Technology solutions photo -->
+                <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&h=300" alt="Technology solutions" class="rounded-xl w-full h-48 object-cover mb-8" />
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <span class="bg-white/20 text-white px-4 py-2 rounded-full text-sm">Machine Learning</span>
+                    <span class="bg-white/20 text-white px-4 py-2 rounded-full text-sm">Natural Language Processing</span>
+                    <span class="bg-white/20 text-white px-4 py-2 rounded-full text-sm">Computer Vision</span>
+                    <span class="bg-white/20 text-white px-4 py-2 rounded-full text-sm">Predictive Analytics</span>
+                </div>
+            </div>
+            
+            <!-- Additional service content templates would be added here -->
+            <!-- Each with appropriate photos and tags -->
+        </div>
+    </div>
+</section>
+<!-- @END_COMPONENT: ServicesSection -->
+
+<!-- @COMPONENT: DigitalMarketingSection -->
+<section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-900 mb-6">Digital Marketing</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">Streamlining solutions for swift success</p>
+        </div>
+        
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <!-- Digital marketing campaigns photo -->
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="Digital marketing campaigns" class="rounded-2xl shadow-xl w-full h-auto" />
+            </div>
+            
+            <div>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8">
+                    <span class="bg-white border border-gray-200 text-gray-700 px-4 py-3 rounded-xl text-center font-medium hover:border-primary-300 transition-colors">Logos</span>
+                    <span class="bg-white border border-gray-200 text-gray-700 px-4 py-3 rounded-xl text-center font-medium hover:border-primary-300 transition-colors">Content Creation</span>
+                    <span class="bg-white border border-gray-200 text-gray-700 px-4 py-3 rounded-xl text-center font-medium hover:border-primary-300 transition-colors">Performance Marketing</span>
+                    <span class="bg-white border border-gray-200 text-gray-700 px-4 py-3 rounded-xl text-center font-medium hover:border-primary-300 transition-colors">Decentralized</span>
+                    <span class="bg-white border border-gray-200 text-gray-700 px-4 py-3 rounded-xl text-center font-medium hover:border-primary-300 transition-colors">Paid Media</span>
+                    <span class="bg-white border border-gray-200 text-gray-700 px-4 py-3 rounded-xl text-center font-medium hover:border-primary-300 transition-colors">Website Development</span>
+                    <span class="bg-white border border-gray-200 text-gray-700 px-4 py-3 rounded-xl text-center font-medium hover:border-primary-300 transition-colors">Web Design</span>
+                    <span class="bg-white border border-gray-200 text-gray-700 px-4 py-3 rounded-xl text-center font-medium hover:border-primary-300 transition-colors">SEO Services</span>
+                    <span class="bg-white border border-gray-200 text-gray-700 px-4 py-3 rounded-xl text-center font-medium hover:border-primary-300 transition-colors">Video Production</span>
+                    <span class="bg-white border border-gray-200 text-gray-700 px-4 py-3 rounded-xl text-center font-medium hover:border-primary-300 transition-colors">Website Development</span>
+                    <span class="bg-white border border-gray-200 text-gray-700 px-4 py-3 rounded-xl text-center font-medium hover:border-primary-300 transition-colors">Web Design</span>
+                    <span class="bg-white border border-gray-200 text-gray-700 px-4 py-3 rounded-xl text-center font-medium hover:border-primary-300 transition-colors">SEO Services</span>
+                    <span class="bg-white border border-gray-200 text-gray-700 px-4 py-3 rounded-xl text-center font-medium hover:border-primary-300 transition-colors">Public Relations & Influencers</span>
+                    <span class="bg-white border border-gray-200 text-gray-700 px-4 py-3 rounded-xl text-center font-medium hover:border-primary-300 transition-colors">Email Marketing</span>
+                    <span class="bg-white border border-gray-200 text-gray-700 px-4 py-3 rounded-xl text-center font-medium hover:border-primary-300 transition-colors">Branding</span>
+                    <span class="bg-white border border-gray-200 text-gray-700 px-4 py-3 rounded-xl text-center font-medium hover:border-primary-300 transition-colors">Marketing Automation</span>
+                </div>
+                
+                <p class="text-gray-600 leading-relaxed">Our comprehensive digital marketing services help businesses establish their online presence, reach their target audience, and drive measurable results through strategic campaigns and data-driven approaches.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- @END_COMPONENT: DigitalMarketingSection -->
+
+<!-- @COMPONENT: PowerfulAPIsSection -->
+<section id="technology" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">Powerful APIs</h2>
+                <p class="text-xl text-gray-600 mb-8">Seamless integration for your company. Automate your process and connect the data in real time.</p>
+                
+                <!-- API integration photo -->
+                <img src="https://images.unsplash.com/photo-1518186285589-2f7649de83e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" alt="API integration" class="rounded-2xl shadow-xl w-full h-auto mb-8" />
+                
+                <!-- API integration icons grid -->
+                <div class="grid grid-cols-4 gap-6">
+                    <div class="bg-gray-900 p-4 rounded-xl flex items-center justify-center">
+                        <i class="fab fa-node-js text-white text-2xl"></i>
+                    </div>
+                    <div class="bg-blue-600 p-4 rounded-xl flex items-center justify-center">
+                        <i class="fab fa-react text-white text-2xl"></i>
+                    </div>
+                    <div class="bg-orange-500 p-4 rounded-xl flex items-center justify-center">
+                        <i class="fab fa-js-square text-white text-2xl"></i>
+                    </div>
+                    <div class="bg-red-500 p-4 rounded-xl flex items-center justify-center">
+                        <i class="fab fa-angular text-white text-2xl"></i>
+                    </div>
+                    <div class="bg-yellow-500 p-4 rounded-xl flex items-center justify-center">
+                        <i class="fab fa-python text-white text-2xl"></i>
+                    </div>
+                    <div class="bg-blue-400 p-4 rounded-xl flex items-center justify-center">
+                        <i class="fab fa-docker text-white text-2xl"></i>
+                    </div>
+                    <div class="bg-orange-600 p-4 rounded-xl flex items-center justify-center">
+                        <i class="fab fa-aws text-white text-2xl"></i>
+                    </div>
+                    <div class="bg-gray-700 p-4 rounded-xl flex items-center justify-center">
+                        <i class="fab fa-github text-white text-2xl"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="relative">
+                <!-- Technology solutions photo -->
+                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="Technology solutions" class="rounded-2xl shadow-xl w-full h-auto" />
+                
+                <!-- Floating API card -->
+                <div class="absolute -bottom-8 -right-8 bg-white rounded-xl shadow-2xl p-6 max-w-sm">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <div class="bg-green-100 p-3 rounded-lg">
+                            <i class="fas fa-plug text-green-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-gray-900">Real-time Sync</div>
+                            <div class="text-gray-600 text-sm">99.9% uptime</div>
+                        </div>
+                    </div>
+                    <div class="text-sm text-gray-600">Instant data synchronization across all platforms</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- @END_COMPONENT: PowerfulAPIsSection -->
+
+<!-- @COMPONENT: BrandingDesignSection -->
+<section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <!-- Branding design photo -->
+                <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="Branding design" class="rounded-2xl shadow-xl w-full h-auto" />
+            </div>
+            
+            <div>
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">Branding and design</h2>
+                <p class="text-xl text-gray-600 mb-8">Crafting tomorrow's digital landscape today</p>
+                
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <span class="bg-white border border-gray-200 text-gray-700 px-4 py-3 rounded-xl text-center font-medium hover:border-primary-300 transition-colors">Branding & Visual Identity</span>
+                    <span class="bg-white border border-gray-200 text-gray-700 px-4 py-3 rounded-xl text-center font-medium hover:border-primary-300 transition-colors">Growth</span>
+                    <span class="bg-white border border-gray-200 text-gray-700 px-4 py-3 rounded-xl text-center font-medium hover:border-primary-300 transition-colors">Shopify</span>
+                    <span class="bg-white border border-gray-200 text-gray-700 px-4 py-3 rounded-xl text-center font-medium hover:border-primary-300 transition-colors">Ad Design</span>
+                    <span class="bg-white border border-gray-200 text-gray-700 px-4 py-3 rounded-xl text-center font-medium hover:border-primary-300 transition-colors">User Flow</span>
+                    <span class="bg-white border border-gray-200 text-gray-700 px-4 py-3 rounded-xl text-center font-medium hover:border-primary-300 transition-colors">Social Media Design</span>
+                    <span class="bg-white border border-gray-200 text-gray-700 px-4 py-3 rounded-xl text-center font-medium hover:border-primary-300 transition-colors">Easy-to-use interface</span>
+                    <span class="bg-white border border-gray-200 text-gray-700 px-4 py-3 rounded-xl text-center font-medium hover:border-primary-300 transition-colors">User Research</span>
+                    <span class="bg-white border border-gray-200 text-gray-700 px-4 py-3 rounded-xl text-center font-medium hover:border-primary-300 transition-colors">Scalable</span>
+                    <span class="bg-white border border-gray-200 text-gray-700 px-4 py-3 rounded-xl text-center font-medium hover:border-primary-300 transition-colors">Web Development</span>
+                    <span class="bg-white border border-gray-200 text-gray-700 px-4 py-3 rounded-xl text-center font-medium hover:border-primary-300 transition-colors">Wordpress</span>
+                    <span class="bg-white border border-gray-200 text-gray-700 px-4 py-3 rounded-xl text-center font-medium hover:border-primary-300 transition-colors">UI/UX Design</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- @END_COMPONENT: BrandingDesignSection -->
+
+<!-- @COMPONENT: CaseStudiesSection -->
+<section id="case-studies" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-900 mb-6">Case Studies</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">Real results from real clients</p>
+        </div>
+        
+        <!-- Case studies slider -->
+        <div class="relative">
+            <div class="overflow-hidden">
+                <div class="flex transition-transform duration-500 ease-in-out" id="case-studies-slider">
+                    <!-- Case study 1 -->
+                    <div class="min-w-full">
+                        <div class="grid lg:grid-cols-2 gap-12 items-center">
+                            <div>
+                                <!-- Case study examples photo -->
+                                <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="Case study examples" class="rounded-2xl shadow-xl w-full h-auto" />
+                            </div>
+                            <div>
+                                <div class="bg-primary-100 text-primary-800 inline-block px-4 py-2 rounded-full text-sm font-medium mb-4">E-commerce</div>
+                                <h3 class="text-3xl font-bold text-gray-900 mb-6">TechFlow Solutions</h3>
+                                <div class="grid grid-cols-2 gap-6 mb-8">
+                                    <div>
+                                        <div class="text-3xl font-bold text-primary-600">450%</div>
+                                        <div class="text-gray-600">Revenue Growth</div>
+                                    </div>
+                                    <div>
+                                        <div class="text-3xl font-bold text-primary-600">280%</div>
+                                        <div class="text-gray-600">Traffic Increase</div>
+                                    </div>
+                                    <div>
+                                        <div class="text-3xl font-bold text-primary-600">6.2x</div>
+                                        <div class="text-gray-600">ROAS</div>
+                                    </div>
+                                    <div>
+                                        <div class="text-3xl font-bold text-primary-600">65%</div>
+                                        <div class="text-gray-600">Conversion Rate</div>
+                                    </div>
+                                </div>
+                                <p class="text-gray-600 mb-6">We helped TechFlow Solutions transform their digital presence through comprehensive SEO optimization, targeted PPC campaigns, and conversion rate optimization, resulting in unprecedented growth.</p>
+                                <button class="text-primary-600 hover:text-primary-700 font-medium flex items-center case-study-btn" data-study="techflow">
+                                    Read Full Case Study <i class="fas fa-arrow-right ml-2"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Case study 2 -->
+                    <div class="min-w-full">
+                        <div class="grid lg:grid-cols-2 gap-12 items-center">
+                            <div>
+                                <!-- Customer success stories photo -->
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="Customer success stories" class="rounded-2xl shadow-xl w-full h-auto" />
+                            </div>
+                            <div>
+                                <div class="bg-green-100 text-green-800 inline-block px-4 py-2 rounded-full text-sm font-medium mb-4">SaaS</div>
+                                <h3 class="text-3xl font-bold text-gray-900 mb-6">DataDrive Analytics</h3>
+                                <div class="grid grid-cols-2 gap-6 mb-8">
+                                    <div>
+                                        <div class="text-3xl font-bold text-green-600">320%</div>
+                                        <div class="text-gray-600">Lead Generation</div>
+                                    </div>
+                                    <div>
+                                        <div class="text-3xl font-bold text-green-600">85%</div>
+                                        <div class="text-gray-600">Cost Reduction</div>
+                                    </div>
+                                    <div>
+                                        <div class="text-3xl font-bold text-green-600">4.8x</div>
+                                        <div class="text-gray-600">ROI Improvement</div>
+                                    </div>
+                                    <div>
+                                        <div class="text-3xl font-bold text-green-600">92%</div>
+                                        <div class="text-gray-600">Client Satisfaction</div>
+                                    </div>
+                                </div>
+                                <p class="text-gray-600 mb-6">DataDrive Analytics needed to scale their B2B lead generation. Our integrated approach combining LinkedIn marketing, content strategy, and marketing automation delivered exceptional results.</p>
+                                <button class="text-green-600 hover:text-green-700 font-medium flex items-center case-study-btn" data-study="datadrive">
+                                    Read Full Case Study <i class="fas fa-arrow-right ml-2"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slider controls -->
+            <button class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white hover:bg-gray-50 rounded-full p-3 shadow-lg transition-all duration-200" id="prev-case-study">
+                <i class="fas fa-chevron-left text-gray-600"></i>
+            </button>
+            <button class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white hover:bg-gray-50 rounded-full p-3 shadow-lg transition-all duration-200" id="next-case-study">
+                <i class="fas fa-chevron-right text-gray-600"></i>
+            </button>
+            
+            <!-- Slider dots -->
+            <div class="flex justify-center mt-8 space-x-2">
+                <button class="w-3 h-3 bg-primary-500 rounded-full case-study-dot active" data-slide="0"></button>
+                <button class="w-3 h-3 bg-gray-300 rounded-full case-study-dot" data-slide="1"></button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- @END_COMPONENT: CaseStudiesSection -->
+
+<!-- @COMPONENT: ExpertiseSection -->
+<section id="expertise" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-900 mb-6">Our Expertise</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">Meet the experts behind your success</p>
+        </div>
+        
+        <!-- Expertise slider -->
+        <div class="relative">
+            <div class="overflow-hidden">
+                <div class="flex transition-transform duration-500 ease-in-out" id="expertise-slider">
+                    <!-- Expert profile 1 -->
+                    <div class="min-w-full">
+                        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                                <!-- Team expertise photo -->
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300" alt="Team expertise" class="w-24 h-24 rounded-full mx-auto mb-6 object-cover" />
+                                <h4 class="text-xl font-semibold text-center mb-2">Sarah Johnson</h4>
+                                <p class="text-primary-600 text-center mb-4">SEO Director</p>
+                                <div class="space-y-2 mb-6">
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-600 text-sm">Technical SEO</span>
+                                        <span class="text-gray-900 font-medium text-sm">95%</span>
+                                    </div>
+                                    <div class="w-full bg-gray-200 rounded-full h-2">
+                                        <div class="bg-primary-500 h-2 rounded-full w-[95%]"></div>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-600 text-sm">Content Strategy</span>
+                                        <span class="text-gray-900 font-medium text-sm">88%</span>
+                                    </div>
+                                    <div class="w-full bg-gray-200 rounded-full h-2">
+                                        <div class="bg-primary-500 h-2 rounded-full w-[88%]"></div>
+                                    </div>
+                                </div>
+                                <p class="text-gray-600 text-sm text-center">8+ years experience in enterprise SEO with proven track record of increasing organic traffic by 300%+</p>
+                            </div>
+                            
+                            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                                <!-- Team expertise photo -->
+                                <img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300" alt="Team expertise" class="w-24 h-24 rounded-full mx-auto mb-6 object-cover" />
+                                <h4 class="text-xl font-semibold text-center mb-2">Michael Chen</h4>
+                                <p class="text-primary-600 text-center mb-4">PPC Specialist</p>
+                                <div class="space-y-2 mb-6">
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-600 text-sm">Google Ads</span>
+                                        <span class="text-gray-900 font-medium text-sm">92%</span>
+                                    </div>
+                                    <div class="w-full bg-gray-200 rounded-full h-2">
+                                        <div class="bg-primary-500 h-2 rounded-full w-[92%]"></div>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-600 text-sm">Facebook Ads</span>
+                                        <span class="text-gray-900 font-medium text-sm">85%</span>
+                                    </div>
+                                    <div class="w-full bg-gray-200 rounded-full h-2">
+                                        <div class="bg-primary-500 h-2 rounded-full w-[85%]"></div>
+                                    </div>
+                                </div>
+                                <p class="text-gray-600 text-sm text-center">Google Ads certified professional managing $2M+ in ad spend with average ROAS of 4.2x</p>
+                            </div>
+                            
+                            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                                <!-- Team expertise photo -->
+                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300" alt="Team expertise" class="w-24 h-24 rounded-full mx-auto mb-6 object-cover" />
+                                <h4 class="text-xl font-semibold text-center mb-2">Emily Rodriguez</h4>
+                                <p class="text-primary-600 text-center mb-4">UX Designer</p>
+                                <div class="space-y-2 mb-6">
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-600 text-sm">UI/UX Design</span>
+                                        <span class="text-gray-900 font-medium text-sm">96%</span>
+                                    </div>
+                                    <div class="w-full bg-gray-200 rounded-full h-2">
+                                        <div class="bg-primary-500 h-2 rounded-full w-[96%]"></div>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-600 text-sm">User Research</span>
+                                        <span class="text-gray-900 font-medium text-sm">89%</span>
+                                    </div>
+                                    <div class="w-full bg-gray-200 rounded-full h-2">
+                                        <div class="bg-primary-500 h-2 rounded-full w-[89%]"></div>
+                                    </div>
+                                </div>
+                                <p class="text-gray-600 text-sm text-center">Award-winning designer with expertise in conversion optimization and user experience design</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slider controls -->
+            <button class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white hover:bg-gray-50 rounded-full p-3 shadow-lg transition-all duration-200" id="prev-expert">
+                <i class="fas fa-chevron-left text-gray-600"></i>
+            </button>
+            <button class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white hover:bg-gray-50 rounded-full p-3 shadow-lg transition-all duration-200" id="next-expert">
+                <i class="fas fa-chevron-right text-gray-600"></i>
+            </button>
+            
+            <!-- Slider dots -->
+            <div class="flex justify-center mt-8 space-x-2">
+                <button class="w-3 h-3 bg-primary-500 rounded-full expert-dot active" data-slide="0"></button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- @END_COMPONENT: ExpertiseSection -->
+
+<!-- @COMPONENT: ResultsSection -->
+<section id="results" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-900 mb-6">Our Results</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">Numbers that speak for themselves</p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+            <div class="text-center">
+                <div class="text-5xl font-bold text-primary-600 mb-2">500+</div>
+                <div class="text-gray-600">Projects Completed</div>
+            </div>
+            <div class="text-center">
+                <div class="text-5xl font-bold text-primary-600 mb-2">98%</div>
+                <div class="text-gray-600">Client Satisfaction</div>
+            </div>
+            <div class="text-center">
+                <div class="text-5xl font-bold text-primary-600 mb-2">250%</div>
+                <div class="text-gray-600">Average ROI</div>
+            </div>
+            <div class="text-center">
+                <div class="text-5xl font-bold text-primary-600 mb-2">24/7</div>
+                <div class="text-gray-600">Support Available</div>
+            </div>
+        </div>
+        
+        <!-- Results showcase -->
+        <div class="bg-gradient-to-br from-primary-50 to-blue-50 rounded-3xl p-12">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-3xl font-bold text-gray-900 mb-6">Real Results, Real Impact</h3>
+                    <p class="text-lg text-gray-600 mb-8">Our data-driven approach delivers measurable results across all digital channels. From SEO to PPC, social media to content marketing, we help businesses achieve their growth objectives.</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="font-medium text-gray-900">Organic Traffic Growth</span>
+                            <span class="text-primary-600 font-semibold">+340%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-3">
+                            <div class="bg-primary-500 h-3 rounded-full w-[85%]"></div>
+                        </div>
+                        
+                        <div class="flex items-center justify-between">
+                            <span class="font-medium text-gray-900">Conversion Rate Optimization</span>
+                            <span class="text-primary-600 font-semibold">+180%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-3">
+                            <div class="bg-primary-500 h-3 rounded-full w-[70%]"></div>
+                        </div>
+                        
+                        <div class="flex items-center justify-between">
+                            <span class="font-medium text-gray-900">Lead Generation</span>
+                            <span class="text-primary-600 font-semibold">+420%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-3">
+                            <div class="bg-primary-500 h-3 rounded-full w-[95%]"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <!-- Customer success stories photo -->
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="Customer success stories" class="rounded-2xl shadow-xl w-full h-auto" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- @END_COMPONENT: ResultsSection -->
+
+<!-- @COMPONENT: InsideSemanticMindsSection -->
+<section id="inside" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-900 mb-6">Inside Semantic Minds</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">Get to know our culture, values, and what makes us different</p>
+        </div>
+        
+        <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
+            <div>
+                <h3 class="text-3xl font-bold text-gray-900 mb-6">Our Story</h3>
+                <p class="text-lg text-gray-600 mb-6">Founded in 2018, Semantic Minds started with a simple mission: to help businesses harness the power of digital marketing and cutting-edge technology to achieve sustainable growth.</p>
+                <p class="text-lg text-gray-600 mb-8">Today, we're a team of passionate experts who combine deep industry knowledge with innovative approaches to deliver exceptional results for our clients.</p>
+                
+                <div class="grid grid-cols-2 gap-6">
+                    <div>
+                        <div class="text-3xl font-bold text-gray-900 mb-2">50+</div>
+                        <div class="text-gray-600">Team Members</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-gray-900 mb-2">5</div>
+                        <div class="text-gray-600">Years Experience</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-gray-900 mb-2">15+</div>
+                        <div class="text-gray-600">Industries Served</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-gray-900 mb-2">3</div>
+                        <div class="text-gray-600">Global Offices</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <!-- Business team collaboration photo -->
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="Business team collaboration" class="rounded-2xl shadow-xl w-full h-auto" />
+            </div>
+        </div>
+        
+        <!-- Company values -->
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-2xl p-8 shadow-lg text-center">
+                <div class="bg-primary-100 p-4 rounded-full w-16 h-16 mx-auto mb-6 flex items-center justify-center">
+                    <i class="fas fa-lightbulb text-primary-600 text-2xl"></i>
+                </div>
+                <h4 class="text-xl font-semibold text-gray-900 mb-4">Innovation</h4>
+                <p class="text-gray-600">We stay ahead of industry trends and continuously evolve our strategies to deliver cutting-edge solutions.</p>
+            </div>
+            
+            <div class="bg-white rounded-2xl p-8 shadow-lg text-center">
+                <div class="bg-primary-100 p-4 rounded-full w-16 h-16 mx-auto mb-6 flex items-center justify-center">
+                    <i class="fas fa-heart text-primary-600 text-2xl"></i>
+                </div>
+                <h4 class="text-xl font-semibold text-gray-900 mb-4">Passion</h4>
+                <p class="text-gray-600">Our team is driven by genuine passion for digital marketing and helping businesses succeed online.</p>
+            </div>
+            
+            <div class="bg-white rounded-2xl p-8 shadow-lg text-center">
+                <div class="bg-primary-100 p-4 rounded-full w-16 h-16 mx-auto mb-6 flex items-center justify-center">
+                    <i class="fas fa-trophy text-primary-600 text-2xl"></i>
+                </div>
+                <h4 class="text-xl font-semibold text-gray-900 mb-4">Excellence</h4>
+                <p class="text-gray-600">We maintain the highest standards in everything we do, from strategy development to execution.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- @END_COMPONENT: InsideSemanticMindsSection -->
+
+<!-- @COMPONENT: CalendarBookingSection -->
+<section class="py-20 bg-gradient-to-br from-primary-500 to-primary-700">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold text-white mb-6">Ready to Get Started?</h2>
+            <p class="text-xl text-blue-100 max-w-3xl mx-auto">Book a free consultation with our experts and discover how we can help grow your business</p>
+        </div>
+        
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="text-white">
+                <h3 class="text-2xl font-semibold mb-6">What to expect from your consultation:</h3>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-400 mr-4 mt-1"></i>
+                        <div>
+                            <strong>Free audit of your current digital presence</strong>
+                            <p class="text-blue-100 mt-1">We'll analyze your website, SEO, and marketing strategies</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-400 mr-4 mt-1"></i>
+                        <div>
+                            <strong>Customized strategy recommendations</strong>
+                            <p class="text-blue-100 mt-1">Tailored solutions based on your specific goals and budget</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-400 mr-4 mt-1"></i>
+                        <div>
+                            <strong>ROI projections and timeline</strong>
+                            <p class="text-blue-100 mt-1">Clear expectations for results and investment</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-400 mr-4 mt-1"></i>
+                        <div>
+                            <strong>No commitment required</strong>
+                            <p class="text-blue-100 mt-1">Get valuable insights with no strings attached</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Calendar booking interface -->
+            <div class="bg-white rounded-3xl p-8 shadow-2xl">
+                <h4 class="text-2xl font-semibold text-gray-900 mb-6 text-center">Book Your Free Consultation</h4>
+                
+                <!-- Calendar component mockup -->
+                <div class="mb-6">
+                    <div class="text-center mb-4">
+                        <h5 class="text-lg font-medium text-gray-900">January 2024</h5>
+                    </div>
+                    
+                    <div class="grid grid-cols-7 gap-1 text-center text-sm mb-4">
+                        <div class="text-gray-500 font-medium py-2">Sun</div>
+                        <div class="text-gray-500 font-medium py-2">Mon</div>
+                        <div class="text-gray-500 font-medium py-2">Tue</div>
+                        <div class="text-gray-500 font-medium py-2">Wed</div>
+                        <div class="text-gray-500 font-medium py-2">Thu</div>
+                        <div class="text-gray-500 font-medium py-2">Fri</div>
+                        <div class="text-gray-500 font-medium py-2">Sat</div>
+                    </div>
+                    
+                    <div class="grid grid-cols-7 gap-1 text-center text-sm">
+                        <div class="py-2 text-gray-300">31</div>
+                        <div class="py-2 text-gray-900 hover:bg-primary-100 rounded cursor-pointer calendar-date" data-date="1">1</div>
+                        <div class="py-2 text-gray-900 hover:bg-primary-100 rounded cursor-pointer calendar-date" data-date="2">2</div>
+                        <div class="py-2 text-gray-900 hover:bg-primary-100 rounded cursor-pointer calendar-date" data-date="3">3</div>
+                        <div class="py-2 text-gray-900 hover:bg-primary-100 rounded cursor-pointer calendar-date" data-date="4">4</div>
+                        <div class="py-2 text-gray-900 hover:bg-primary-100 rounded cursor-pointer calendar-date" data-date="5">5</div>
+                        <div class="py-2 text-gray-900 hover:bg-primary-100 rounded cursor-pointer calendar-date" data-date="6">6</div>
+                        <div class="py-2 text-gray-900 hover:bg-primary-100 rounded cursor-pointer calendar-date" data-date="7">7</div>
+                        <div class="py-2 text-gray-900 hover:bg-primary-100 rounded cursor-pointer calendar-date" data-date="8">8</div>
+                        <div class="py-2 text-gray-900 hover:bg-primary-100 rounded cursor-pointer calendar-date" data-date="9">9</div>
+                        <div class="py-2 text-gray-900 hover:bg-primary-100 rounded cursor-pointer calendar-date" data-date="10">10</div>
+                        <div class="py-2 text-gray-900 hover:bg-primary-100 rounded cursor-pointer calendar-date" data-date="11">11</div>
+                        <div class="py-2 text-gray-900 hover:bg-primary-100 rounded cursor-pointer calendar-date" data-date="12">12</div>
+                        <div class="py-2 text-gray-900 hover:bg-primary-100 rounded cursor-pointer calendar-date" data-date="13">13</div>
+                        <div class="py-2 bg-primary-500 text-white rounded cursor-pointer calendar-date selected" data-date="15">15</div>
+                        <div class="py-2 text-gray-900 hover:bg-primary-100 rounded cursor-pointer calendar-date" data-date="16">16</div>
+                        <div class="py-2 text-gray-900 hover:bg-primary-100 rounded cursor-pointer calendar-date" data-date="17">17</div>
+                        <div class="py-2 text-gray-900 hover:bg-primary-100 rounded cursor-pointer calendar-date" data-date="18">18</div>
+                        <div class="py-2 text-gray-900 hover:bg-primary-100 rounded cursor-pointer calendar-date" data-date="19">19</div>
+                        <div class="py-2 text-gray-900 hover:bg-primary-100 rounded cursor-pointer calendar-date" data-date="20">20</div>
+                    </div>
+                </div>
+                
+                <!-- Time slots -->
+                <div class="mb-6">
+                    <h6 class="font-medium text-gray-900 mb-3">Available Times</h6>
+                    <div class="grid grid-cols-2 gap-2">
+                        <button class="bg-primary-500 hover:bg-primary-600 text-white py-2 px-4 rounded font-medium transition-colors time-slot selected" data-time="9:00 AM">9:00 AM</button>
+                        <button class="border border-gray-300 hover:border-primary-500 text-gray-700 py-2 px-4 rounded font-medium transition-colors time-slot" data-time="10:30 AM">10:30 AM</button>
+                        <button class="border border-gray-300 hover:border-primary-500 text-gray-700 py-2 px-4 rounded font-medium transition-colors time-slot" data-time="2:00 PM">2:00 PM</button>
+                        <button class="border border-gray-300 hover:border-primary-500 text-gray-700 py-2 px-4 rounded font-medium transition-colors time-slot" data-time="3:30 PM">3:30 PM</button>
+                    </div>
+                </div>
+                
+                <!-- Contact form -->
+                <form class="space-y-4" id="consultation-form">
+                    <div>
+                        <input type="text" placeholder="Your Name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent" required>
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Your Email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent" required>
+                    </div>
+                    <div>
+                        <input type="tel" placeholder="Phone Number" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent" required>
+                    </div>
+                    <div>
+                        <textarea placeholder="Tell us about your business goals" rows="3" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-primary-500 hover:bg-primary-600 text-white py-3 rounded-lg font-semibold transition-colors duration-200">
+                        Book Free Consultation
+                    </button>
+                </form>
+                
+                <p class="text-xs text-gray-500 text-center mt-4">By booking, you agree to our terms of service and privacy policy.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- @END_COMPONENT: CalendarBookingSection -->
+
+<!-- @COMPONENT: Footer -->
+<footer class="bg-gray-900 text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+            <div>
+                <div class="flex items-center mb-6">
+                    <span class="text-xl font-bold">Semantic Minds</span>
+                </div>
+                <p class="text-gray-400 mb-6">Transforming businesses through innovative digital marketing and technology solutions.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors social-link" data-platform="facebook">
+                        <i class="fab fa-facebook text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors social-link" data-platform="twitter">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors social-link" data-platform="linkedin">
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors social-link" data-platform="instagram">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="text-lg font-semibold mb-6">Services</h4>
+                <ul class="space-y-3">
+                    <li><a href="#services" class="text-gray-400 hover:text-white transition-colors footer-link">SEO & Lead Generation</a></li>
+                    <li><a href="#services" class="text-gray-400 hover:text-white transition-colors footer-link">Digital Marketing</a></li>
+                    <li><a href="#services" class="text-gray-400 hover:text-white transition-colors footer-link">PPC Management</a></li>
+                    <li><a href="#services" class="text-gray-400 hover:text-white transition-colors footer-link">Web Development</a></li>
+                    <li><a href="#services" class="text-gray-400 hover:text-white transition-colors footer-link">UX & Design</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="text-lg font-semibold mb-6">Company</h4>
+                <ul class="space-y-3">
+                    <li><a href="#inside" class="text-gray-400 hover:text-white transition-colors footer-link">About Us</a></li>
+                    <li><a href="#case-studies" class="text-gray-400 hover:text-white transition-colors footer-link">Case Studies</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors footer-link">Careers</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors footer-link">Contact</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors footer-link">Blog</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="text-lg font-semibold mb-6">Contact Info</h4>
+                <div class="space-y-3">
+                    <div class="flex items-start">
+                        <i class="fas fa-map-marker-alt text-primary-500 mr-3 mt-1"></i>
+                        <div class="text-gray-400">
+                            <div>123 Business Street</div>
+                            <div>London, UK SW1A 1AA</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-phone text-primary-500 mr-3"></i>
+                        <a href="tel:+442079460958" class="text-gray-400 hover:text-white transition-colors">+44 20 7946 0958</a>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-envelope text-primary-500 mr-3"></i>
+                        <a href="mailto:hello@semanticminds.com" class="text-gray-400 hover:text-white transition-colors">hello@semanticminds.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="border-t border-gray-800 pt-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">&copy; 2024 Semantic Minds. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors footer-link">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors footer-link">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors footer-link">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- @END_COMPONENT: Footer -->
+
+<script>
+(function() {
+    // Navigation functionality
+    function initNavigation() {
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"], .nav-link').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const target = document.querySelector(targetId);
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Mobile menu functionality
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton?.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Book call buttons
+        document.querySelectorAll('.book-call-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelector('#consultation-form').scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'center'
+                });
+            });
+        });
+
+        // Get started button
+        document.querySelector('.get-started-btn')?.addEventListener('click', () => {
+            document.querySelector('#pricing').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        });
+    }
+
+    // Pricing functionality
+    function initPricing() {
+        // Currency selector
+        document.querySelectorAll('.currency-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.currency-btn').forEach(b => {
+                    b.classList.remove('bg-primary-500', 'text-white', 'active');
+                    b.classList.add('bg-gray-50', 'hover:bg-gray-100');
+                });
+                btn.classList.add('bg-primary-500', 'text-white', 'active');
+                btn.classList.remove('bg-gray-50', 'hover:bg-gray-100');
+                
+                // Update pricing based on currency
+                const currency = btn.dataset.currency;
+                updatePricingCurrency(currency);
+            });
+        });
+
+        // Billing toggle
+        const billingToggle = document.getElementById('billing-toggle');
+        const billingToggleDot = document.getElementById('billing-toggle-dot');
+        let isYearly = true;
+
+        billingToggle?.addEventListener('click', () => {
+            isYearly = !isYearly;
+            if (isYearly) {
+                billingToggleDot.classList.add('translate-x-6');
+                billingToggleDot.classList.remove('translate-x-1');
+            } else {
+                billingToggleDot.classList.add('translate-x-1');
+                billingToggleDot.classList.remove('translate-x-6');
+            }
+            updatePricingPeriod(isYearly);
+        });
+
+        // Plan selection buttons
+        document.querySelectorAll('.plan-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const plan = btn.dataset.plan;
+                alert(`You selected the ${plan} plan! Redirecting to checkout...`);
+                // Here you would typically redirect to a checkout page
+            });
+        });
+
+        // Dashboard tabs
+        document.querySelectorAll('.dashboard-tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                document.querySelectorAll('.dashboard-tab').forEach(t => {
+                    t.classList.remove('bg-white', 'text-primary-600', 'active');
+                    t.classList.add('text-white', 'hover:bg-white/20');
+                });
+                tab.classList.add('bg-white', 'text-primary-600', 'active');
+                tab.classList.remove('text-white', 'hover:bg-white/20');
+                
+                updateDashboard(tab.dataset.tab);
+            });
+        });
+    }
+
+    function updatePricingCurrency(currency) {
+        const rates = { USD: 1.25, EUR: 1.15, GBP: 1 };
+        const symbols = { USD: '$', EUR: '€', GBP: '£' };
+        
+        // Update all pricing displays
+        document.querySelectorAll('[data-price]').forEach(element => {
+            const basePrice = parseFloat(element.dataset.price);
+            const newPrice = Math.round(basePrice * rates[currency]);
+            element.textContent = `${symbols[currency]}${newPrice}`;
+        });
+    }
+
+    function updatePricingPeriod(isYearly) {
+        // Apply 20% discount for yearly billing
+        const discount = isYearly ? 0.8 : 1;
+        document.querySelectorAll('[data-price]').forEach(element => {
+            const basePrice = parseFloat(element.dataset.price);
+            const newPrice = Math.round(basePrice * discount);
+            element.textContent = element.textContent.replace(/\d+/, newPrice);
+        });
+    }
+
+    function updateDashboard(plan) {
+        const dashboardData = {
+            starter: { rate: '£32/Hour', hours: '5 Hours', total: '£160 Total', active: '3 Days', daily: '5 Hours', discount: '0%' },
+            growth: { rate: '£28/Hour', hours: '25 Hours', total: '£700 Total', active: '15 Days', daily: '8 Hours', discount: '5%' },
+            professional: { rate: '£25/Hour', hours: '50 Hours', total: '£1,250 Total', active: '30 Days', daily: '12 Hours', discount: '10%' },
+            enterprise: { rate: '£22/Hour', hours: '100 Hours', total: '£2,200 Total', active: '60 Days', daily: '20 Hours', discount: '15%' }
+        };
+
+        const data = dashboardData[plan];
+        if (data) {
+            document.getElementById('dashboard-rate').textContent = data.rate;
+            document.getElementById('dashboard-hours').textContent = data.hours;
+            document.getElementById('dashboard-total').textContent = data.total;
+            document.getElementById('dashboard-active').textContent = data.active;
+            document.getElementById('dashboard-daily').textContent = data.daily;
+            document.getElementById('dashboard-discount').textContent = data.discount;
+        }
+    }
+
+    // Services functionality
+    function initServices() {
+        const serviceButtons = document.querySelectorAll('.service-btn');
+        const serviceContents = document.querySelectorAll('.service-content');
+        
+        serviceButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const targetService = button.dataset.service;
+                
+                // Remove active classes
+                serviceButtons.forEach(btn => btn.classList.remove('active'));
+                serviceContents.forEach(content => content.classList.add('hidden'));
+                
+                // Add active classes
+                button.classList.add('active');
+                const targetContent = document.querySelector(`[data-content="${targetService}"]`);
+                if (targetContent) {
+                    targetContent.classList.remove('hidden');
+                    targetContent.classList.add('active');
+                }
+            });
+        });
+    }
+
+    // Slider functionality
+    function initSliders() {
+        // Case studies slider
+        let currentCaseStudy = 0;
+        const caseStudySlider = document.getElementById('case-studies-slider');
+        const caseStudyDots = document.querySelectorAll('.case-study-dot');
+        const totalCaseStudies = 2;
+        
+        function updateCaseStudySlider() {
+            if (caseStudySlider) {
+                caseStudySlider.style.transform = `translateX(-${currentCaseStudy * 100}%)`;
+                caseStudyDots.forEach((dot, index) => {
+                    dot.classList.toggle('bg-primary-500', index === currentCaseStudy);
+                    dot.classList.toggle('bg-gray-300', index !== currentCaseStudy);
+                });
+            }
+        }
+        
+        document.getElementById('prev-case-study')?.addEventListener('click', () => {
+            currentCaseStudy = currentCaseStudy > 0 ? currentCaseStudy - 1 : totalCaseStudies - 1;
+            updateCaseStudySlider();
+        });
+        
+        document.getElementById('next-case-study')?.addEventListener('click', () => {
+            currentCaseStudy = currentCaseStudy < totalCaseStudies - 1 ? currentCaseStudy + 1 : 0;
+            updateCaseStudySlider();
+        });
+
+        // Case study dots
+        caseStudyDots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                currentCaseStudy = index;
+                updateCaseStudySlider();
+            });
+        });
+
+        // Case study buttons
+        document.querySelectorAll('.case-study-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const study = btn.dataset.study;
+                alert(`Opening case study: ${study}`);
+                // Here you would typically open a modal or navigate to a detailed case study page
+            });
+        });
+
+        // Expertise slider
+        let currentExpert = 0;
+        const expertiseSlider = document.getElementById('expertise-slider');
+        const expertDots = document.querySelectorAll('.expert-dot');
+        const totalExperts = 1;
+        
+        function updateExpertiseSlider() {
+            if (expertiseSlider) {
+                expertiseSlider.style.transform = `translateX(-${currentExpert * 100}%)`;
+                expertDots.forEach((dot, index) => {
+                    dot.classList.toggle('bg-primary-500', index === currentExpert);
+                    dot.classList.toggle('bg-gray-300', index !== currentExpert);
+                });
+            }
+        }
+        
+        document.getElementById('prev-expert')?.addEventListener('click', () => {
+            currentExpert = currentExpert > 0 ? currentExpert - 1 : totalExperts - 1;
+            updateExpertiseSlider();
+        });
+        
+        document.getElementById('next-expert')?.addEventListener('click', () => {
+            currentExpert = currentExpert < totalExperts - 1 ? currentExpert + 1 : 0;
+            updateExpertiseSlider();
+        });
+
+        // Expert dots
+        expertDots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                currentExpert = index;
+                updateExpertiseSlider();
+            });
+        });
+    }
+
+    // Calendar functionality
+    function initCalendar() {
+        // Calendar date selection
+        document.querySelectorAll('.calendar-date').forEach(date => {
+            date.addEventListener('click', () => {
+                document.querySelectorAll('.calendar-date').forEach(d => {
+                    d.classList.remove('bg-primary-500', 'text-white', 'selected');
+                });
+                date.classList.add('bg-primary-500', 'text-white', 'selected');
+            });
+        });
+
+        // Time slot selection
+        document.querySelectorAll('.time-slot').forEach(slot => {
+            slot.addEventListener('click', () => {
+                document.querySelectorAll('.time-slot').forEach(s => {
+                    s.classList.remove('bg-primary-500', 'text-white', 'selected');
+                    s.classList.add('border', 'border-gray-300', 'text-gray-700');
+                });
+                slot.classList.add('bg-primary-500', 'text-white', 'selected');
+                slot.classList.remove('border', 'border-gray-300', 'text-gray-700');
+            });
+        });
+
+        // Consultation form submission
+        document.getElementById('consultation-form')?.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const selectedDate = document.querySelector('.calendar-date.selected')?.dataset.date;
+            const selectedTime = document.querySelector('.time-slot.selected')?.dataset.time;
+            
+            if (selectedDate && selectedTime) {
+                alert(`Consultation booked for January ${selectedDate} at ${selectedTime}! We'll send you a confirmation email shortly.`);
+                // Here you would typically send the form data to your backend
+            } else {
+                alert('Please select a date and time for your consultation.');
+            }
+        });
+    }
+
+    // Footer functionality
+    function initFooter() {
+        // Social media links
+        document.querySelectorAll('.social-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const platform = link.dataset.platform;
+                alert(`Opening ${platform} page...`);
+                // Here you would typically open the actual social media page
+            });
+        });
+
+        // Footer links
+        document.querySelectorAll('.footer-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                const href = link.getAttribute('href');
+                if (href.startsWith('#')) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                } else if (!href.startsWith('mailto:') && !href.startsWith('tel:')) {
+                    e.preventDefault();
+                    alert(`Navigating to ${link.textContent}...`);
+                    // Here you would typically navigate to the actual page
+                }
+            });
+        });
+    }
+
+    // Initialize all functionality when DOM is loaded
+    document.addEventListener('DOMContentLoaded', () => {
+        initNavigation();
+        initPricing();
+        initServices();
+        initSliders();
+        initCalendar();
+        initFooter();
+    });
+})();
+</script>
+
+</body>
+</html>
